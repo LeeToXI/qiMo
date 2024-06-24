@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>图书管理系统</title>
+    <link rel="stylesheet" href="00app/layui/css/layui.css">
+    <script src="00app/layui/layui.js"></script>
 </head>
 <body>
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;">
+    <div style="background-color: #6be1d8;">
+    <img src="image/logo.png" height="40" style="padding: 0 0 0 40px;"/>
+    <ul class="layui-tab-title" style="float: right;">
+        <li class="layui-this">首页</li>
+        <li>用户管理</li>
+        <li>权限分配</li>
+        <li>商品管理</li>
+        <li>订单管理</li>
+    </ul>
+    </div>
+    <div class="layui-tab-content">
+        <!--        首页-->
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            
+        </div>
+        <!--        用户管理-->
+        <div class="layui-tab-item">
+            <p>内容2</p>
+        </div>
+        <!--        权限分配-->
+        <div class="layui-tab-item">
+            <p>内容3</p>
+            内容3
+        </div>
+        <!--        商品管理-->
+        <div class="layui-tab-item">
+            <p>内容4</p>
+            内容4
+        </div>
+        <!--        订单管理-->
+        <div class="layui-tab-item">
+            <p>内容5</p>
+            内容5
+        </div>
+    </div>
+</div>
 
+<script>
+    //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+</script>
 </body>
 </html>
