@@ -8,21 +8,33 @@
     <script src="00app/layui/layui.js"></script>
 </head>
 <body>
-<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;">
-    <div style="background-color: #6be1d8;">
-    <img src="image/logo.png" height="40" style="padding: 0 0 0 40px;"/>
-    <ul class="layui-tab-title" style="float: right;">
-        <li class="layui-this">首页</li>
-        <li>用户管理</li>
-        <li>权限分配</li>
-        <li>商品管理</li>
-        <li>订单管理</li>
-    </ul>
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;width: 99vw;">
+    <div style="background-color: #6be1d8;padding: 0 0 10px 0 ;">
+        <img src="image/logo.png" height="40" style="padding: 0 0 0 40px;"/>
+        <ul class="layui-tab-title" style="float: right;border-width: 0;margin: 10px 0 0px 0;">
+            <li class="layui-this">首页</li>
+            <li>用户管理</li>
+            <li>权限分配</li>
+            <li>商品管理</li>
+            <li>订单管理</li>
+        </ul>
     </div>
-    <div class="layui-tab-content">
+    <div class="layui-tab-content" style="padding: 0 0 0 0 ;">
         <!--        首页-->
-        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
-            
+        <div class="layui-tab layui-tab-brief font_color_home" lay-filter="docDemoTabBrief"
+             style="
+             background-image: url('image/bg.jpg');
+             width:99vw;
+             height: 100vh;
+             background-repeat: no-repeat;
+             background-position: center center;
+             background-size: cover; /* 背景图片覆盖整个元素，保持宽高比 */
+             padding: 0 0 0 0 ;
+             margin: 0 0 0 0 ;">
+            <div style="width: 70vw;margin: 0 auto;">
+                <p class="font_color_home" style="background-color: rgba(170,255,255,0.65);">测试文本</p>
+            </div>
+
         </div>
         <!--        用户管理-->
         <div class="layui-tab-item">
