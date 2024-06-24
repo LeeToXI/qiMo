@@ -21,7 +21,7 @@
     </div>
     <div class="layui-tab-content" style="padding: 0 0 0 0 ;">
         <!--        首页-->
-        <div class="layui-tab layui-tab-brief font_color_home" lay-filter="docDemoTabBrief"
+        <div id= "tab1" class="layui-tab-item layui-tab-brief font_color_home" lay-filter="docDemoTabBrief"
              style="
              background-image: url('image/bg.jpg');
              width:99vw;
@@ -37,21 +37,21 @@
 
         </div>
         <!--        用户管理-->
-        <div class="layui-tab-item">
+        <div id="tab2"  class="layui-tab-item">
             <p>内容2</p>
         </div>
         <!--        权限分配-->
-        <div class="layui-tab-item">
+        <div id="tab3"  class="layui-tab-item">
             <p>内容3</p>
             内容3
         </div>
         <!--        商品管理-->
-        <div class="layui-tab-item">
+        <div id="tab4" class="layui-tab-item">
             <p>内容4</p>
             内容4
         </div>
         <!--        订单管理-->
-        <div class="layui-tab-item">
+        <div id="tab5"  class="layui-tab-item">
             <p>内容5</p>
             内容5
         </div>
@@ -63,6 +63,7 @@
     layui.use('element', function () {
         var element = layui.element;
 
+        
         //…
     });
 </script>
