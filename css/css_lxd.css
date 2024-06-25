@@ -5,3 +5,8 @@
 .font_color_home{
     color: #ffffff;
 }
+
+/*修改输入的时候的效果*/
+.layui-input_lxd:focus{
+    border: 1px solid #009688;
+}

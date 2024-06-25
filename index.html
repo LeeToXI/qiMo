@@ -39,27 +39,37 @@
              margin: 0 0 0 0 ;">
             <br>
             <br>
+            <!--搜索框界面-->
             <div style="width: 70vw;
                         background-color: rgba(170,255,255,0.64);
                         margin: 0 auto;
                         border-radius: 10px;padding: 10px"
                  class="font_color_home">
-                <h1>测试文本</h1>
+<!--                <h1>测试文本</h1>-->
                 <!--搜索按钮-->
                 <div style="
-                        border-radius: 20px;
-                        background-color: rgba(255,255,255,0.84);
-                        margin: 10px 0;padding: 0 18px;">
+                            display: flex;           /* 使用Flexbox布局 */
+                            align-items: center;     /* 垂直居中对齐 */
+                            border-radius: 20px;
+                            background-color: rgba(255,255,255,0.84);
+                            margin: 10px 0;
+                            padding: 0 18px;"   
+                     class = "layui-input_lxd">
                     <input type="text"
                            name="title"
                            required
                            lay-verify="required"
                            placeholder="请输入图书名称"
                            autocomplete="off"
-                           class="layui-input" 
-                           style="background-color: rgba(255,255,255,0);">
+                           class="layui-input "
+                           style="background-color: rgba(255,255,255,0);
+                                  flex-grow: 1; /* 让输入框占据剩余空间 */">
+                    <i class="layui-icon" style="font-size: 30px; color: #1E9FFF; margin-left: 10px;">&#xe615;</i>
                 </div>
             </div>
+            
+            <!--轮播图-->
+            
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
@@ -86,6 +96,7 @@
 </div>
 
 <script>
+    //这个不知道是干啥的,先不动
     //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
     layui.use('element', function () {
         var element = layui.element;
