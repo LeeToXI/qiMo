@@ -41,11 +41,11 @@
             <br>
             <!--搜索框界面-->
             <div style="width: 70vw;
-                        background-color: rgba(170,255,255,0.64);
+                        background-color: rgba(170,255,255,0);
                         margin: 0 auto;
                         border-radius: 10px;padding: 10px"
                  class="font_color_home">
-<!--                <h1>测试文本</h1>-->
+                <!--                <h1>测试文本</h1>-->
                 <!--搜索按钮-->
                 <div style="
                             display: flex;           /* 使用Flexbox布局 */
@@ -53,8 +53,8 @@
                             border-radius: 20px;
                             background-color: rgba(255,255,255,0.84);
                             margin: 10px 0;
-                            padding: 0 18px;"   
-                     class = "layui-input_lxd">
+                            padding: 0 18px;"
+                     class="layui-input_lxd">
                     <input type="text"
                            name="title"
                            required
@@ -63,13 +63,24 @@
                            autocomplete="off"
                            class="layui-input "
                            style="background-color: rgba(255,255,255,0);
-                                  flex-grow: 1; /* 让输入框占据剩余空间 */">
+                                  flex-grow: 1; /* 让输入框占据剩余空间 */
+                                  margin: 2px 0px;">
                     <i class="layui-icon" style="font-size: 30px; color: #1E9FFF; margin-left: 10px;">&#xe615;</i>
                 </div>
             </div>
-            
+
             <!--轮播图-->
-            
+            <div class="div_lxd">
+                <div class="layui-carousel" id="test1">
+                    <div carousel-item>
+                        <div>条目1</div>
+                        <div>条目2</div>
+                        <div>条目3</div>
+                        <div>条目4</div>
+                        <div>条目5</div>
+                    </div>
+                </div>
+            </div>
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
@@ -104,6 +115,18 @@
 
         //…
     });
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '70vw' //设置容器宽度
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+
+
 </script>
 </body>
 </html>

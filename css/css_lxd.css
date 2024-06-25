@@ -10,3 +10,8 @@
 .layui-input_lxd:focus{
     border: 1px solid #009688;
 }
+
+.div_lxd{
+    width:70vw;
+    height: 100vh;
+}
