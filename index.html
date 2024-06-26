@@ -6,6 +6,7 @@
     <title>图书管理系统</title>
     <link rel="stylesheet" href="00app/layui/css/layui.css">
     <script src="00app/layui/layui.js"></script>
+    <link rel="stylesheet" href="css/css_lxd.css">
 </head>
 <body>
 <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;width: 99vw;">
@@ -38,7 +39,6 @@
              padding: 0 0 0 0 ;
              margin: 0 0 0 0 ;">
             <br>
-            <br>
             <!--搜索框界面-->
             <div style="width: 70vw;
                         background-color: rgba(170,255,255,0);
@@ -70,15 +70,42 @@
             </div>
 
             <!--轮播图-->
-            <div class="div_lxd">
-                <div class="layui-carousel" id="test1">
+            <div class="div_lxd" style="    
+                    width:70vw;
+                    margin: 0 auto;">
+                <div class="layui-carousel" id="test1" style="margin: 0 auto;">
                     <div carousel-item>
-                        <div>条目1</div>
-                        <div>条目2</div>
-                        <div>条目3</div>
-                        <div>条目4</div>
-                        <div>条目5</div>
+                        <div class="div_carousel_lxd">
+                            条目1放大萨达
+                        </div>
+                        <div class="div_carousel_lxd">
+                            条目2范德萨范德萨
+                        </div>
+                        <div class="div_carousel_lxd">
+                            条目3范德萨范德萨
+                        </div>
+                        <div class="div_carousel_lxd">
+                            条目4
+                        </div>
+                        <div class="div_carousel_lxd">
+                            条目5
+                        </div>
                     </div>
+                </div>
+            </div><!--轮播图代码结束-->
+            
+            <!--资源展示模块-->
+            <div style="margin: 20px auto;
+                        border-radius: 10px;
+                        width: 80vw;
+                        height: 10vh;/*高度,临时设置,后面取消*/
+                        background-color: rgba(255,255,255,0.84);">
+                <div class="layui-row" 
+                     style="background-color: #00f7de;
+                            width: 78vw;
+                            margin: 0 auto;
+                            /*padding: 5px 0;*/
+                            height: 100%;">
                 </div>
             </div>
         </div><!--lxd的代码结束-->
@@ -120,9 +147,9 @@
         //建造实例
         carousel.render({
             elem: '#test1'
-            , width: '70vw' //设置容器宽度
+            , width: '68vw' //设置容器宽度
             , arrow: 'always' //始终显示箭头
-            //,anim: 'updown' //切换动画方式
+            // ,anim: 'updown' //切换动画方式
         });
     });
 
