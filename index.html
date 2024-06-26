@@ -32,12 +32,13 @@
              style="
              background-image: url('image/bg.jpg');
              width:99vw;
-             height: 100vh;
+             height: 100%;
              background-repeat: no-repeat;
              background-position: center center;
              background-size: cover; /* 背景图片覆盖整个元素，保持宽高比 */
              padding: 0 0 0 0 ;
-             margin: 0 0 0 0 ;">
+             margin: 0 0 0 0 ;
+             background-color: rgba(  0,  0,  0,1);">
             <br>
             <!--搜索框界面-->
             <div style="width: 70vw;
@@ -72,40 +73,104 @@
             <!--轮播图-->
             <div class="div_lxd" style="    
                     width:70vw;
-                    margin: 0 auto;">
+                    margin: 0 auto;
+                    height: 100%;">
                 <div class="layui-carousel" id="test1" style="margin: 0 auto;">
                     <div carousel-item>
                         <div class="div_carousel_lxd">
-                            条目1放大萨达
-                        </div>
+                            <img src="image/nl_img/3f17b084.jpg" style="object-fit: cover;width: 100%;height: 100%;"/></div>
                         <div class="div_carousel_lxd">
-                            条目2范德萨范德萨
-                        </div>
+                            <img src="image/nl_img/158e0f75.jpg" style="object-fit: cover;width: 100%;height: 100%;"/></div>
                         <div class="div_carousel_lxd">
-                            条目3范德萨范德萨
-                        </div>
+                            <img src="image/nl_img/d06ed100.jpg" style="object-fit: cover;width: 100%;height: 100%;"/></div>
                         <div class="div_carousel_lxd">
-                            条目4
-                        </div>
+                            <img src="image/nl_img/dafa915b.jpg" style="object-fit: cover;width: 100%;height: 100%;"/></div>
                         <div class="div_carousel_lxd">
-                            条目5
-                        </div>
+                            <img src="image/nl_img/e64312c4.png" style="object-fit: cover;width: 100%;height: 100%;"/></div>
                     </div>
                 </div>
             </div><!--轮播图代码结束-->
-            
+
             <!--资源展示模块-->
             <div style="margin: 20px auto;
                         border-radius: 10px;
-                        width: 80vw;
-                        height: 10vh;/*高度,临时设置,后面取消*/
+                        width: 70vw;
+                        /*height: 60vh;!*高度,临时设置,后面取消*!*/
                         background-color: rgba(255,255,255,0.84);">
-                <div class="layui-row" 
-                     style="background-color: #00f7de;
-                            width: 78vw;
+                <div class=""
+                     style="color: #3e3b3b;
+                          font-size: 25pt;
+                          font-weight: bolder;
+                          margin: 5px auto;
+                          text-align: center;height: 5vh;">
+                    <i class="layui-icon" style="font-size: 30px; color: #1E9FFF;">&#xe705;</i>
+                    <span>资源展示</span>
+                </div>
+                <!--展示的10个模块-->
+                <div class="layui-row"
+                     style="background-color: rgba(255,255,255,0);
+                            width: 68vw;
                             margin: 0 auto;
                             /*padding: 5px 0;*/
-                            height: 100%;">
+                            height: 60vh;padding-bottom: 3vh;">
+                    <!--计划是2行4列-->
+                    <!--第一行内容-->
+                    <div class="layui-inline"
+                         style="width: 100%;
+                                height: 50%">
+                        <!--第一行第一列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(236,13,13,0.3);
+                                    width: 20%;
+                                    height: 100%;border-radius: 10px 0 0 0 ;">
+                        </div>
+                        <!--第一行第二列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(13,236,91,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第一行第三列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(221,13,236,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第一行第四列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(13,236,221,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第一行第五列-->
+                        <div class="layui-col-md3"
+                             style="
+                                background-color: rgba(236,13,13,0.3);
+                                width: 20%; 
+                                height: 100%;
+                                border-radius: 0 10px 0 0 ;">
+                        </div>
+                    </div>
+                    <!--第一行结束-->
+                    <!--第二行内容-->
+                    <div class="layui-inline"
+                         style="width: 100%;
+                                height: 50%">
+                        <!--第二行第一列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(229,13,236,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第二行第二列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(13,236,229,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第二行第三列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(13,236,102,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第二行第四列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(13,102,236,0.3);width: 20%;height: 100%;">
+                        </div>
+                        <!--第二行第五列-->
+                        <div class="layui-col-md3"
+                             style="background-color: rgba(236,206,13,0.3);width: 20%;height: 100%;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!--lxd的代码结束-->
@@ -147,7 +212,7 @@
         //建造实例
         carousel.render({
             elem: '#test1'
-            , width: '68vw' //设置容器宽度
+            , width: '69vw' //设置容器宽度
             , arrow: 'always' //始终显示箭头
             // ,anim: 'updown' //切换动画方式
         });
