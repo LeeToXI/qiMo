@@ -27,3 +27,23 @@
     height: 100%;
     color: rgba(133, 27, 27, 0.8);
 }
+
+.image-container {
+    position: relative;
+    display: inline-block; /* 使容器与其他元素在同一行显示 */
+    width: 300px; /* 根据你的图片大小调整 */
+    height: 200px; /* 根据你的图片大小调整 */
+    overflow: hidden;
+    margin: 10px; /* 为容器添加外边距，避免与其他组件重叠 */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* 平滑过渡效果 */
+    display: block; /* 移除图片底部的空隙 */
+}
+
+.image-container:hover img {
+    transform: translateY(-20px); /* 鼠标悬停时图片上移的距离 */
+}

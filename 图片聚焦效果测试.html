@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS图片聚焦效果</title>
+    <style>
+        /* 直接在HTML中嵌入CSS */
+        .image-container {
+            position: relative;
+            width: 300px; /* 根据需要调整 */
+            height: 200px; /* 根据需要调整 */
+            overflow: hidden;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease; /* 平滑过渡效果 */
+            transform: scale(1); /* 初始状态 */
+        }
+
+        .image-container:hover .thumbnail {
+            transform: scale(1.5); /* 鼠标悬停时放大 */
+        }
+    </style>
+</head>
+<body>
+<div class="image-container">
+    <img src="image/logo.png" alt="示例图片" class="thumbnail">
+</div>
+</body>
+</html>
