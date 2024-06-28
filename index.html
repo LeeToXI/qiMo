@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/css_lxd.css">
 </head>
 <body>
-<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;width: 99vw;overflow: hidden;">
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;width: 99vw;">
     <div style="background-color: #6be1d8;padding: 0 0 10px 0 ;">
         <img src="image/logo.png" height="40" style="padding: 0 0 0 40px;"/>
         <ul class="layui-tab-title"
@@ -36,7 +36,6 @@
              background-repeat: no-repeat;
              background-position: center center;
              background-size: cover; /* 背景图片覆盖整个元素，保持宽高比 */
-              background-attachment: fixed; /* 背景固定 */
              padding: 0 0 0 0 ;
              margin: 0 0 0 0 ;
              background-color: rgba(  0,  0,  0,1);">
@@ -75,7 +74,7 @@
             <div class="div_lxd" style="    
                     width:70vw;
                     margin: 0 auto;
-                    height: 40vh;">
+                    height: 100%;">
                 <div class="layui-carousel" id="test1" style="margin: 0 auto;">
                     <div carousel-item>
                         <div class="div_carousel_lxd">
@@ -91,51 +90,7 @@
                     </div>
                 </div>
             </div><!--轮播图代码结束-->
-            <br>
-            <!--功能拓展模块-->
-            <div style="width: 70vw;
-                        height:40vh;
-                        background-color: rgba(107,225,216,0.84);
-                        margin: 0 auto;border-radius: 10px;
-                        ">
-                <div style="width: 68vw;
-                        height:40vh;
-                        background-color: rgba(255,255,255,0.6);
-                        margin: 0 auto;
-                        padding-top: 1px;
-                        border-radius: 10px;">
-                    <div class="image-container_lxd layui-col-sm3">
-                        <span class="layui-inline">培训</span>
-                        <a href="https://www.nlc.cn/web/shouye/zuixinhuodong/pxyg/index.shtml">
-                            <img src="image/nl_img/p1.jpg"/>
-                        </a>
-                    </div>
-                    <div class="image-container_lxd layui-col-sm3">
-                        <a href="https://www.nlc.cn/web/shouye/zuixinhuodong/jzyg/index.shtml">
-                            <span class="layui-inline">讲座</span>
-                            <img src="image/nl_img/p2.jpg"/>
-                        </a>
-                    </div>
-                    <div class="image-container_lxd layui-col-sm3">
-                        <a href="https://www.nlc.cn/web/shouye/zuixinhuodong/zlyg/index.shtml">
-                            <span class="layui-inline">展览</span>
-                            <img src="image/nl_img/p3.jpeg"/>
-                        </a>
-                    </div>
-                    <div class="image-container_lxd layui-col-sm3">
-                        <a href="https://www.nlc.cn/web/ziyuanfuwu/ziyuantuijian/xzzt/index.shtml">
-                            <span class="layui-inline">专题</span>
-                            <img src="image/nl_img/p4.png"/>
-                        </a>
-                    </div>
-                    <div class="image-container_lxd layui-col-sm3">
-                        <a href="https://www.nlc.cn/web/zdxm/bbjd/index.shtml">
-                            <span class="layui-inline">经典</span>
-                            <img src="image/nl_img/t1.jpg"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
             <!--资源展示模块-->
             <div style="margin: 20px auto;
                         border-radius: 10px;
@@ -152,7 +107,6 @@
                     <span>资源特点</span>
                 </div>
                 <!--展示的10个模块-->
-                <a href="https://www.nlc.cn/">
                 <div class="layui-fluid"
                      style="background-color: rgba(255,255,255,0);
                             width: 68vw;
@@ -363,28 +317,20 @@
                         </div>
                     </div>
                 </div>
-                </a>
             </div><!--资源展示模块结束-->
 
-            <!--友情链接-->
-            <div class = "layui-row" 
-                 style = "width: 70vw;
-                          height: 30vh;
-                          margin: 0 auto;
-                          background-color: rgba(107,225,216,0.8);border-radius: 10px;">
-                
+            <!--功能拓展模块-->
+            <div style="width: 70vw;
+                        height:50vh;
+                        background-color: rgba(255,255,255,0.84);
+                        margin: 0 auto;border-radius: 10px;
+                        ">
+                <div class="image-container"><img src="image/nl_img/p1.jpg" height="693" width="1080"/></div>
+                <div class="image-container"><img src="image/nl_img/p2.jpg" height="717" width="955"/></div>
+                <div class="image-container"><img src="image/nl_img/p3.jpeg" height="717" width="955"/></div>
+                <div class="image-container"><img src="image/nl_img/p4.png" height="411" width="499"/></div>
+                <div class="image-container"><img src="image/nl_img/t1.jpg" height="469" width="911"/></div>
             </div>
-            <!--版权页面-->
-            <!--    网站版权声明-->
-            <div class="copyright layui-row" >
-                <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099 嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
-                    <br>
-                    地网文（2081）3209-124号 | 增值电信业务经营许可证：地C2-20810211
-                    <br>
-                    互联网违法不良信息举报电话：0Terra-9964996（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：Senleetoxi@Earth.solar.MilkyWayGalaxy<br>
-                    亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
-            </div>
-            
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
@@ -396,16 +342,16 @@
           <!--  <div class="layui-layout layui-layout-admin">-->
             <div class="layui-row" style="background-color: rgb(107, 225, 216);">
                 <div class="layui-col-md4 layui-col-md-offset9">
-                    <div class="layui-input-group">
-                        <div class="layui-input-prefix">关键字：</div>
-                        <input class="layui-input" type="text">
-                        <div class="layui-input-suffix ">
-                            <div class="layui-btn-container">
-                                <button class="layui-btn" type="button">搜索</button>
-                            </div>
-                        </div>
+            <div class="layui-input-group">
+                <div class="layui-input-prefix">关键字：</div>
+                    <input type="text" class="layui-input">
+                    <div class="layui-input-suffix ">
+                    <div class="layui-btn-container">
+                         <button type="button" class="layui-btn">搜索</button>
+                    </div>     
                     </div>
-                </div>
+            </div>
+        </div>
             </div>
            <div class="layui-row" style="text-align: center;">
         
@@ -426,17 +372,17 @@
                   
                     <li class="layui-nav-item">
                         <a href="javascript:;"style="color: black;">公告栏</a>
-                        <dl class="layui-nav-child">
-                        <dd><a href="gg.html"style="color:black" target="content">通知</a></dd>
+                        <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
+                        <dd ><a href="gg.html"style="color:black" target="content">通知</a></dd>
                         <dd><a href="login.html"style="color:black"target="content">书籍推荐</a></dd>
                         <dd><a href="cangshu.html"style="color: black"target="content">库存书籍</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item" >
                         <a href="javascript:;"style="color: black;">图片新闻</a>
-                        <dl class="layui-nav-child">
+                        <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
                         <dd><a href="xinwen.html"style="color: black;"target="content">天图概况</a></dd>
-                        <dd><a href="gl.html"style="color: black;"target="content">在线资讯</a></dd>
+                        <dd><a href="gl.html"style="color: black;"target="content">入馆须知</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item"><a href="jianjie.html"style="color: black;"target="content">部门简介</a></li>
@@ -452,80 +398,18 @@
 	                         }
                 </style>
                 <div class="layui-body">
-                    <iframe class="frame" src="login.html" name="content" frameborder="0" scrolling="yes" style="background-color: rgb(107, 225, 216);"></iframe>
-=======
-                    <li class="layui-nav-item"><a href="" style="color: black;">新闻资讯</a></li>
-                    <li class="layui-nav-item"><a href="" style="color: black;">基本服务</a></li>
-                    <li class="layui-nav-item"><a href="" style="color: black;">网上服务</a></li>
-                    <li class="layui-nav-item"><a href="" style="color: black;">网络资源</a></li>
-                    <li class="layui-nav-item"><a href="" style="color: black;">特色服务</a></li>
-                    <li class="layui-nav-item"><a href="" style="color: black;">重要链接</a></li>
-                </ul>
-            </div>
-            <div class="layui-row">
-                <div class="layui-col-md2">
-                    <ul class="layui-nav layui-nav-tree" style="background-color: rgb(107, 225, 216);">
-
-                        <li class="layui-nav-item">
-                            <a href="javascript:;" style="color: black;">公告栏</a>
-                            <dl class="layui-nav-child">
-                                <dd><a href="javascript:;" style="color:black">通知</a></dd>
-                                <dd><a href="javascript:;" style="color:black">书籍推荐</a></dd>
-                                <dd><a href="javascript:;" style="color: black;">系统更新</a></dd>
-                                <dd><a href="javascript:;" style="color: black;">库存书籍</a></dd>
-                            </dl>
-                        </li>
-                        <li class="layui-nav-item">
-                            <a href="javascript:;" style="color: black;">图片新闻</a>
-                            <dl class="layui-nav-child">
-                                <dd><a style="color: black;">天图资讯</a></dd>
-
-                                <dd><a href="javascript:;" style="color: black;">央视新闻</a></dd>
-                                <dd><a href="javascript:;" style="color: black;">在线资讯</a></dd>
-                            </dl>
-                        </li>
-                        <li class="layui-nav-item"><a href="javascript:;" style="color: black;">活动预告</a></li>
-                        <li class="layui-nav-item"><a href="javascript:;" style="color: black;">在线视频</a></li>
-                        <li class="layui-nav-item"><a href="javascript:;" style="color: black;">预决算公开</a></li>
-                    </ul>
-                </div>
-                <div class="layui-col-md3">
-                    <p style="text-decoration: underline;">你当前所在的位置是：首页>>公告栏>>通知</p>
-
-                </div>
-                <div class="layui-col-md6">
-                    <br>
-                    <br>
-                    <p style="text-align: center;">2024年端午节开馆通知：</p>
-                    <br>
-                    <p style="text-align: center;">发布时间：2024年6月5日</p>
-                    <br>
-                    <p>2024年端午节期间，图书馆开馆时间安排如下：</p>
-                    <br>
-                    <img src="./image/nl_img/image.png">
-                    <br>
-                    <p>备注：办证处闭馆前半小时停止办证。</p>
-                </div>
-            </div>
-            <div class="layui-row">
-                <div class="layui-col-md4"></div>
-                <div class="layui-col-md4 layui-col-md-offset8">
-                    <p>1-516图书馆</p>
-                    <p>2024年6月5日</p>
-                    <p>文案：综合办公室</p>
-                    <p>编辑：宣传小组</p>
+                    <iframe class="frame" src="gl.html" name="content" frameborder="0" scrolling="yes" style="background-color: rgb(107, 225, 216);"></iframe>
                 </div>
             </div>
           <div class="layui-row " style="background-color: rgb(107, 225, 216);"margin-top=>
                 <div class="layui-col-md12" style="text-align: center;">
-                    <p>版权所有: 1-516图书馆 <span>制作维护: 1-516图书馆</span></p>
-                    <p>地址：应用技术学院<span>   邮编： 655421</span><span> 滇ICP备06000142号</span>
+                <p >版权所有: 1-516图书馆 <span>制作维护: 1-516图书馆</span></p>
+                <p >地址：应用技术学院<span>   邮编： 655421</span><span> 滇ICP备06000142号</span>
                 </div>
             </div>  
            
-            </div>
         </div>
-
+  
         <!--        商品管理-->
         <div id="tab4" class="layui-tab-item">
             <p>内容4</p>
@@ -539,10 +423,7 @@
         <!--syh代码结束-->
     </div>
 </div>
-<!--版权页尾-->
-<div class="layui-row">
-    
-</div>
+
 <script>
     //这个不知道是干啥的,先不动
     //注意：选项卡 依赖 element 模块，否则无法进行功能性操作
@@ -552,7 +433,6 @@
 
         //…
     });
-    //lxdjs代码开始
     layui.use('carousel', function () {
         var carousel = layui.carousel;
         //建造实例
@@ -564,7 +444,6 @@
             , height: '40vh'
         });
     });
-    //lxdjs代码结束
 
 
 </script>
