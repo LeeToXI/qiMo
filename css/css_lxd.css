@@ -1,49 +1,91 @@
-﻿.radius_div{
+﻿.radius_div {
     border-radius: 5px;
 }
 
-.font_color_home{
+.font_color_home {
     color: rgba(255, 255, 255, 0);
 }
 
 /*修改输入的时候的效果*/
-.layui-input_lxd:focus{
+.layui-input_lxd:focus {
     border: 1px solid #009688;
 }
 
 /*写在这里的css样式好像没有效果,暂时不知道原因*/
 /*突然发现html没有引入css.....*/
-.div_lxd{
+.div_lxd {
     width: 60vw;
     /*height: 27vh;*/
     margin: 0 auto;
-    background-color: rgb(248,248,248,0.8);
+    background-color: rgb(248, 248, 248, 0.8);
     border-radius: 10px;
 }
 
-.div_carousel_lxd{
-    background-color: rgb(255, 255, 255,0);
+.div_carousel_lxd {
+    background-color: rgb(255, 255, 255, 0);
     /*width: 100%;*/
     height: 100%;
     color: rgba(133, 27, 27, 0.8);
 }
 
-.image-container {
-    position: relative;
-    display: inline-block; /* 使容器与其他元素在同一行显示 */
-    width: 300px; /* 根据你的图片大小调整 */
-    height: 200px; /* 根据你的图片大小调整 */
-    overflow: hidden;
-    margin: 10px; /* 为容器添加外边距，避免与其他组件重叠 */
+.image-container_lxd {
+    position: relative; /* 相对定位，以便图片可以绝对定位覆盖 */
+    overflow: hidden; /* 隐藏溢出的内容 */
+    display: inline-block;
+    height: 99%;
+    width: 20%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+    transform: translateY(0); /* 初始状态无Y轴变换 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 轻微的阴影 */
+    z-index: 1; /* 确保在聚焦时元素在其他元素之上 */
 }
 
-.image-container img {
+.image-container_lxd img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease; /* 平滑过渡效果 */
-    display: block; /* 移除图片底部的空隙 */
+    height: 100%;
 }
 
-.image-container:hover img {
-    transform: translateY(-20px); /* 鼠标悬停时图片上移的距离 */
+.image-container_lxd span {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 20pt;
+    width: 100%;
+    padding-left: 10px;
 }
+
+.image-container_lxd:hover {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 437px;
+    transition: transform 0.5s ease; /* 平滑过渡效果 */
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.image-container_lxd:hover span {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 20pt;
+    padding-left: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.image-container_lxd:hover img {
+    /*position: absolute;*/
+    z-index: 100;
+    overflow: hidden;
+    width: 300px;
+    height: 437px;
+
+    top: -100px; /* 向上移动10像素 */
+    left: 20px; /* 向左移动20像素 */
+}
+
