@@ -36,6 +36,7 @@
              background-repeat: no-repeat;
              background-position: center center;
              background-size: cover; /* 背景图片覆盖整个元素，保持宽高比 */
+              background-attachment: fixed; /* 背景固定 */
              padding: 0 0 0 0 ;
              margin: 0 0 0 0 ;
              background-color: rgba(  0,  0,  0,1);">
@@ -74,7 +75,7 @@
             <div class="div_lxd" style="    
                     width:70vw;
                     margin: 0 auto;
-                    height: 100%;">
+                    height: 40vh;">
                 <div class="layui-carousel" id="test1" style="margin: 0 auto;">
                     <div carousel-item>
                         <div class="div_carousel_lxd">
@@ -94,7 +95,7 @@
             <!--功能拓展模块-->
             <div style="width: 70vw;
                         height:40vh;
-                        background-color: rgba(107,225,216,0.84);
+                        background-color: rgba(255,255,255,0.84);
                         margin: 0 auto;border-radius: 10px;
                         ">
                 <div style="width: 68vw;
@@ -135,7 +136,6 @@
                     </div>
                 </div>
             </div>
-
             <!--资源展示模块-->
             <div style="margin: 20px auto;
                         border-radius: 10px;
@@ -152,225 +152,227 @@
                     <span>资源特点</span>
                 </div>
                 <!--展示的10个模块-->
-                <div class="layui-fluid"
-                     style="background-color: rgba(255,255,255,0);
+                <a href="https://www.nlc.cn/">
+                    <div class="layui-fluid"
+                         style="background-color: rgba(255,255,255,0);
                             width: 68vw;
                             margin: 0 auto;
                             /*padding: 5px 0;*/
                             height: 60vh;
                             padding-bottom: 3vh;">
-                    <!--计划是2行4列-->
-                    <!--第一行内容-->
-                    <div class="layui-row"
-                         style="width: 100%;
+                        <!--计划是2行4列-->
+                        <!--第一行内容-->
+                        <div class="layui-row"
+                             style="width: 100%;
                                 height: 50%">
-                        <!--第一行第一列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(236,13,13,0.3);
+                            <!--第一行第一列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(236,13,13,0.3);
                                     width: 20%;
                                     height: 100%;
                                     border-radius: 10px 0 0 0 ;">
-                            <div style="margin: 0 auto;
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\books.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\books.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                多样书籍
+                                    多样书籍
+                                </div>
                             </div>
-                        </div>
-                        <!--第一行第二列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(13,236,91,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第一行第二列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(13,236,91,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\chat-dots.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\chat-dots.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                社区提供
+                                    社区提供
+                                </div>
                             </div>
-                        </div>
-                        <!--第一行第三列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(221,13,236,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第一行第三列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(221,13,236,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\database.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\database.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                巨量书籍
+                                    巨量书籍
+                                </div>
                             </div>
-                        </div>
-                        <!--第一行第四列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(13,236,221,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第一行第四列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(13,236,221,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\envelope-check.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\envelope-check.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                预约工单
+                                    预约工单
+                                </div>
                             </div>
-                        </div>
-                        <!--第一行第五列-->
-                        <div class="layui-col-md3"
-                             style="
+                            <!--第一行第五列-->
+                            <div class="layui-col-md3"
+                                 style="
                                 background-color: rgba(236,13,13,0.3);
                                 width: 20%; 
                                 height: 100%;
                                 border-radius: 0 10px 0 0 ;">
-                            <div style="margin: 0 auto;
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\radar.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\radar.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                快速搜索
+                                    快速搜索
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--第一行结束-->
-                    <!--第二行内容-->
-                    <div class="layui-row   "
-                         style="width: 100%;
+                        <!--第一行结束-->
+                        <!--第二行内容-->
+                        <div class="layui-row   "
+                             style="width: 100%;
                                 height: 50%">
-                        <!--第二行第一列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(229,13,236,0.3);width: 20%;height: 100%;border-radius: 0 0 0 10px ;">
-                            <div style="margin: 0 auto;
+                            <!--第二行第一列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(229,13,236,0.3);width: 20%;height: 100%;border-radius: 0 0 0 10px ;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\wifi.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\wifi.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;
                                         width:100%;
                                         height: 7vh;
                                         text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                网络共享
+                                    网络共享
+                                </div>
                             </div>
-                        </div>
-                        <!--第二行第二列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(13,236,229,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第二行第二列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(13,236,229,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\wechat.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\wechat.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                微信登录
+                                    微信登录
+                                </div>
                             </div>
-                        </div>
-                        <!--第二行第三列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(13,236,102,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第二行第三列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(13,236,102,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\book-open-text.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\book-open-text.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                经典名著
+                                    经典名著
+                                </div>
                             </div>
-                        </div>
-                        <!--第二行第四列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(13,102,236,0.3);width: 20%;height: 100%;">
-                            <div style="margin: 0 auto;
+                            <!--第二行第四列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(13,102,236,0.3);width: 20%;height: 100%;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\fingerprint.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\fingerprint.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                身份证别
+                                    身份证别
+                                </div>
                             </div>
-                        </div>
-                        <!--第二行第五列-->
-                        <div class="layui-col-md3"
-                             style="background-color: rgba(236,206,13,0.3);width: 20%;height: 100%;border-radius: 0 0 10px 0 ;">
-                            <div style="margin: 0 auto;
+                            <!--第二行第五列-->
+                            <div class="layui-col-md3"
+                                 style="background-color: rgba(236,206,13,0.3);width: 20%;height: 100%;border-radius: 0 0 10px 0 ;">
+                                <div style="margin: 0 auto;
                                         margin-top: 5vh;
                                         /*background-color: #2a2a2a;*/
                                         width: 50%;
                                         height: 50%;">
-                                <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\fork-knife-alt.png"
-                                     style="width: 100%;height: 100%;">
-                            </div>
-                            <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
+                                    <img src="image\magicoon_5400+_UI_icons_library_v1.3\PNG\1 - Light\All (Light)\fork-knife-alt.png"
+                                         style="width: 100%;height: 100%;">
+                                </div>
+                                <div style="margin: 0 auto;width:100%;height: 7vh;text-align: center;margin-top: 3vh;
                                         color: #3e3b3b;
                                         font-size: 16pt;
                                         font-weight: bolder;">
-                                提供餐饮
+                                    提供餐饮
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div><!--资源展示模块结束-->
 
             <!--友情链接-->
-            <div class = "layui-row" 
+            <div class = "layui-row"
                  style = "width: 70vw;
                           height: 30vh;
                           margin: 0 auto;
                           background-color: rgba(107,225,216,0.8);border-radius: 10px;">
-                
+
             </div>
             <!--版权页面-->
             <!--    网站版权声明-->
@@ -382,8 +384,8 @@
                     互联网违法不良信息举报电话：0Terra-9964996（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：Senleetoxi@Earth.solar.MilkyWayGalaxy<br>
                     亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
             </div>
-            
-            
+
+
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
@@ -391,23 +393,23 @@
             <p>内容2</p>
         </div>
         <!--       zhl 权限分配-->
-        <div id="tab3" class="layui-tab-item" style="background-color: rgb(107, 225, 216);">
-          <!--  <div class="layui-layout layui-layout-admin">-->
+        <div id="tab3" class="layui-tab-item" style="background-color: rgb(107, 225, 216);width:100%;height: 100vh;">
+            <!--  <div class="layui-layout layui-layout-admin">-->
             <div class="layui-row" style="background-color: rgb(107, 225, 216);">
                 <div class="layui-col-md4 layui-col-md-offset9">
-            <div class="layui-input-group">
-                <div class="layui-input-prefix">关键字：</div>
-                    <input type="text" class="layui-input">
-                    <div class="layui-input-suffix ">
-                    <div class="layui-btn-container">
-                         <button type="button" class="layui-btn">搜索</button>
-                    </div>     
+                    <div class="layui-input-group">
+                        <div class="layui-input-prefix">关键字：</div>
+                        <input type="text" class="layui-input">
+                        <div class="layui-input-suffix ">
+                            <div class="layui-btn-container">
+                                <button type="button" class="layui-btn">搜索</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
-        </div>
-            </div>
-           <div class="layui-row" style="text-align: center;">
-        
+            <div class="layui-row" style="text-align: center;">
+
                 <ul class="layui-nav" style="background-color: rgb(107, 225, 216); color: black;">
                     <li class="layui-nav-item"><a href="" style="color: black;">首页</a></li>
                     <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=239"style="color: black;" >新闻资讯</a></li>
@@ -416,44 +418,44 @@
                     <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=271"style="color: black;">网络资源</a></li>
                     <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=391"style="color: black;">特色服务</a></li>
                     <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=366"style="color: black;">重要链接</a></li>
-                  </ul>
+                </ul>
 
-        </div>
+            </div>
             <div class="layui-row layui-side" style="margin-top: 150px;">
-         
+
                 <ul class="layui-nav layui-nav-tree" style="background-color: rgb(107, 225, 216);">
-                  
+
                     <li class="layui-nav-item">
                         <a href="javascript:;"style="color: black;">公告栏</a>
                         <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
-                        <dd ><a href="gg.html"style="color:black" target="content">通知</a></dd>
-                        <dd><a href="login.html"style="color:black"target="content">书籍推荐</a></dd>
-                        <dd><a href="cangshu.html"style="color: black"target="content">库存书籍</a></dd>
+                            <dd ><a href="gg.html"style="color:black" target="content">通知</a></dd>
+                            <dd><a href="login.html"style="color:black"target="content">书籍推荐</a></dd>
+                            <dd><a href="cangshu.html"style="color: black"target="content">库存书籍</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item" >
                         <a href="javascript:;"style="color: black;">图片新闻</a>
                         <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
-                        <dd><a href="xinwen.html"style="color: black;"target="content">天图概况</a></dd>
-                        <dd><a href="gl.html"style="color: black;"target="content">入馆须知</a></dd>
+                            <dd><a href="xinwen.html"style="color: black;"target="content">天图概况</a></dd>
+                            <dd><a href="gl.html"style="color: black;"target="content">入馆须知</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item"><a href="jianjie.html"style="color: black;"target="content">部门简介</a></li>
                     <li class="layui-nav-item"><a href="https://www.bilibili.com/"style="color: black;"target="content">在线视频</a></li>
-                    </ul>
-                
+                </ul>
+
             </div>
-                <style>
-                      .frame{
-		                     width: 86.5%;
-		                      /* 100vh 页面全部高度  100vw 页面全部宽度*/
-                            height: 500px;
-	                         }
-                </style>
-                <div class="layui-body">
-                    <iframe class="frame" src="login.html" name="content" frameborder="0" scrolling="yes" style="background-color: rgb(107, 225, 216);"></iframe>
-                </div>
-          <div class="layui-row " style="background-color: rgb(107, 225, 216);"margin-top=>
+            <style>
+                .frame{
+                    width: 86.5%;
+                    /* 100vh 页面全部高度  100vw 页面全部宽度*/
+                    height: 500px;
+                }
+            </style>
+            <div class="layui-body">
+                <iframe class="frame" src="login.html" name="content" frameborder="0" scrolling="yes" style="background-color: rgb(107, 225, 216);"></iframe>
+            </div>
+            <div class="layui-row " style="background-color: rgb(107, 225, 216);margin-top: 100px;">
                 <div class="layui-col-md12" style="text-align: center;">
                     <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099 嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
                         <br>
@@ -462,23 +464,23 @@
                         互联网违法不良信息举报电话：0Terra-9964996（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：Senleetoxi@Earth.solar.MilkyWayGalaxy<br>
                         亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
                 </div>
-            </div>  
-           
             </div>
+
         </div>
-  
-        <!--        商品管理-->
-        <div id="tab4" class="layui-tab-item">
-            <p>内容4</p>
-            内容4
-        </div>
-        <!--        用户管理 brief5--><!--syh页面开始-->
-        <div id="tab5" class="layui-tab-item">
-            <p>内容5</p>
-            内容5
-        </div>
-        <!--syh代码结束-->
     </div>
+
+    <!--        商品管理-->
+    <div id="tab4" class="layui-tab-item">
+        <p>内容4</p>
+        内容4
+    </div>
+    <!--        用户管理 brief5--><!--syh页面开始-->
+    <div id="tab5" class="layui-tab-item">
+        <p>内容5</p>
+        内容5
+    </div>
+    <!--syh代码结束-->
+</div>
 </div>
 
 <script>
