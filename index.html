@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>图书管理系统</title>
-    <link rel="stylesheet" href="00app/layui/css/layui.css">
+    <link href="00app/layui/css/layui.css" rel="stylesheet">
     <script src="00app/layui/layui.js"></script>
-    <link rel="stylesheet" href="css/css_lxd.css">
+    <link href="css/css_lxd.css" rel="stylesheet">
 </head>
 <body>
-<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin: 0 0 0 0;width: 99vw;overflow: hidden;">
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief"
+     style="margin: 0 0 0 0;width: 99vw;overflow: hidden;">
     <div style="background-color: #6be1d8;padding: 0 0 10px 0 ;">
-        <img src="image/logo.png" height="40" style="padding: 0 0 0 40px;"/>
+        <img height="40" src="image/logo.png" style="padding: 0 0 0 40px;"/>
         <ul class="layui-tab-title"
             style="float: right;
                     border-width: 0;
@@ -28,7 +29,7 @@
     <div class="layui-tab-content" style="padding: 0 0 0 0 ;">
         <!--        首页-->
         <!--        lxd的代码-->
-        <div id="tab1" class="layui-show layui-tab-item layui-tab-brief font_color_home" lay-filter="docDemoTabBrief"
+        <div class="layui-show layui-tab-item layui-tab-brief font_color_home" id="tab1" lay-filter="docDemoTabBrief"
              style="
              background-image: url('image/bg.jpg');
              width:99vw;
@@ -42,31 +43,31 @@
              background-color: rgba(  0,  0,  0,1);">
             <br>
             <!--搜索框界面-->
-            <div style="width: 70vw;
+            <div class="font_color_home"
+                 style="width: 70vw;
                         background-color: rgba(170,255,255,0);
                         margin: 0 auto;
-                        border-radius: 10px;padding: 10px"
-                 class="font_color_home">
+                        border-radius: 10px;padding: 10px">
                 <!--                <h1>测试文本</h1>-->
                 <!--搜索按钮-->
-                <div style="
+                <div class="layui-input_lxd"
+                     style="
                             display: flex;           /* 使用Flexbox布局 */
                             align-items: center;     /* 垂直居中对齐 */
                             border-radius: 20px;
                             background-color: rgba(255,255,255,0.84);
                             margin: 10px 0;
-                            padding: 0 18px;"
-                     class="layui-input_lxd">
-                    <input type="text"
-                           name="title"
-                           required
-                           lay-verify="required"
-                           placeholder="请输入图书名称"
-                           autocomplete="off"
+                            padding: 0 18px;">
+                    <input autocomplete="off"
                            class="layui-input "
+                           lay-verify="required"
+                           name="title"
+                           placeholder="请输入图书名称"
+                           required
                            style="background-color: rgba(255,255,255,0);
                                   flex-grow: 1; /* 让输入框占据剩余空间 */
-                                  margin: 2px 0px;">
+                                  margin: 2px 0px;"
+                           type="text">
                     <i class="layui-icon" style="font-size: 30px; color: #1E9FFF; margin-left: 10px;">&#xe615;</i>
                 </div>
             </div><!--搜索框代码结束-->
@@ -95,7 +96,7 @@
             <!--功能拓展模块-->
             <div style="width: 70vw;
                         height:40vh;
-                        background-color: rgba(255,255,255,0.84);
+                        background-color: rgba(107,225,216,0.8);
                         margin: 0 auto;border-radius: 10px;
                         ">
                 <div style="width: 68vw;
@@ -367,42 +368,69 @@
             </div><!--资源展示模块结束-->
 
             <!--友情链接-->
-            <div class = "layui-row"
-                 style = "width: 70vw;
-                          height: 30vh;
+            <div class="layui-row"
+                 style="width: 70vw;
+                          height: auto;
                           margin: 0 auto;
                           background-color: rgba(107,225,216,0.8);border-radius: 10px;">
-
+                <div class="layui-col-md12 link_lxd" style="">友情链接</div>
+                <hr style="color: rgb(56,177,134,0.8);margin: 5px;">
+                <div class="link_lxd_border friend_link">
+                    <span>
+                        <a href="https://www.douban.com/" target="_blank">豆瓣</a>
+                        <a href="https://www.nlc.cn/web/index.shtml" target="_blank">中国国家图书馆</a>
+                        <a href="https://www.mct.gov.cn/" target="_blank">
+            中华人民共和国文化和旅游部
+          </a><a href="https://www.ccdy.cn/" target="_blank">
+            中国文化传媒网
+          </a><a href="http://www.lsc.org.cn/cns/index.html" target="_blank">
+            中国图书馆学会
+          </a><a href="https://www.culturedc.cn/web2.1/index.html" target="_blank">
+            国家公共文化云
+          </a><a href="http://www.nlcpress.com/" target="_blank">
+            国家图书馆出版社
+          </a><br><a href="http://www.chinaabp.cn/" target="_blank">
+            中国古籍保护协会
+          </a><a href="https://www.library.sh.cn/">上海图书馆</a>
+                        <a href="https://www.icourse163.org/">慕课网</a>
+                        <a href="//study.163.com/" target="_blank" class="f-fc9 f4a">网易云课堂</a>
+                        <a href="//www.chinaooc.com.cn/" target="_blank" class="f-fc9 f4a">智慧高教</a>
+                        <a href="https://www.gushiwen.cn/">古诗文网</a>
+                        
+                    </span>
+                </div>
             </div>
             <!--版权页面-->
             <!--    网站版权声明-->
-            <div class="copyright layui-row" >
-                <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099 嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
+            <div class="copyright layui-row">
+                <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099
+                    嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
                     <br>
                     地网文（2081）3209-124号 | 增值电信业务经营许可证：地C2-20810211
                     <br>
                     互联网违法不良信息举报电话：0Terra-9964996（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：Senleetoxi@Earth.solar.MilkyWayGalaxy<br>
-                    亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+                    亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+                </p>
             </div>
 
 
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
-        <div id="tab2" class="layui-tab-item">
+        <div class="layui-tab-item" id="tab2">
             <p>内容2</p>
         </div>
         <!--       zhl 权限分配-->
-        <div id="tab3" class="layui-tab-item" style="background-color: rgb(107, 225, 216);width:100%;height: 100vh;">
+        <div class="layui-tab-item" id="tab3" style="background-color: rgb(107, 225, 216);width:100%;height: 100vh;">
             <!--  <div class="layui-layout layui-layout-admin">-->
             <div class="layui-row" style="background-color: rgb(107, 225, 216);">
                 <div class="layui-col-md4 layui-col-md-offset9">
                     <div class="layui-input-group">
                         <div class="layui-input-prefix">关键字：</div>
-                        <input type="text" class="layui-input">
+                        <input class="layui-input" type="text">
                         <div class="layui-input-suffix ">
                             <div class="layui-btn-container">
-                                <button type="button" class="layui-btn">搜索</button>
+                                <button class="layui-btn" type="button">搜索</button>
                             </div>
                         </div>
                     </div>
@@ -412,12 +440,18 @@
 
                 <ul class="layui-nav" style="background-color: rgb(107, 225, 216); color: black;">
                     <li class="layui-nav-item"><a href="" style="color: black;">首页</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=239"style="color: black;" >新闻资讯</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=287"style="color: black;">基本服务</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=297"style="color: black;">网上服务</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=271"style="color: black;">网络资源</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=391"style="color: black;">特色服务</a></li>
-                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=366"style="color: black;">重要链接</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=239"
+                                                  style="color: black;">新闻资讯</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=287"
+                                                  style="color: black;">基本服务</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=297"
+                                                  style="color: black;">网上服务</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=271"
+                                                  style="color: black;">网络资源</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=391"
+                                                  style="color: black;">特色服务</a></li>
+                    <li class="layui-nav-item"><a href="https://www.tjl.tj.cn/ArticleChannel.aspx?ChannelID=366"
+                                                  style="color: black;">重要链接</a></li>
                 </ul>
 
             </div>
@@ -426,43 +460,48 @@
                 <ul class="layui-nav layui-nav-tree" style="background-color: rgb(107, 225, 216);">
 
                     <li class="layui-nav-item">
-                        <a href="javascript:;"style="color: black;">公告栏</a>
+                        <a href="javascript:" style="color: black;">公告栏</a>
                         <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
-                            <dd ><a href="gg.html"style="color:black" target="content">通知</a></dd>
-                            <dd><a href="tuijian.html"style="color:black"target="content" >书籍推荐</a></dd>
-                            <dd><a href="cangshu.html"style="color: black"target="content">库存书籍</a></dd>
+                            <dd><a href="gg.html" style="color:black" target="content">通知</a></dd>
+                            <dd><a href="login.html" style="color:black" target="content">书籍推荐</a></dd>
+                            <dd><a href="cangshu.html" style="color: black" target="content">库存书籍</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item" >
-                        <a href="javascript:;"style="color: black;">图片新闻</a>
+                    <li class="layui-nav-item">
+                        <a href="javascript:" style="color: black;">图片新闻</a>
                         <dl class="layui-nav-child" style="background-color: rgb(107, 225, 216);">
-                            <dd><a href="xinwen.html"style="color: black;"target="content">天图概况</a></dd>
-                            <dd><a href="gl.html"style="color: black;"target="content">入馆须知</a></dd>
+                            <dd><a href="xinwen.html" style="color: black;" target="content">天图概况</a></dd>
+                            <dd><a href="gl.html" style="color: black;" target="content">入馆须知</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href="jianjie.html"style="color: black;"target="content">部门简介</a></li>
-                    <li class="layui-nav-item"><a href="https://www.bilibili.com/"style="color: black;"target="content">在线视频</a></li>
+                    <li class="layui-nav-item"><a href="jianjie.html" style="color: black;"
+                                                  target="content">部门简介</a></li>
+                    <li class="layui-nav-item"><a href="https://www.bilibili.com/" style="color: black;"
+                                                  target="content">在线视频</a></li>
                 </ul>
 
             </div>
             <style>
-                .frame{
+                .frame {
                     width: 86.5%;
                     /* 100vh 页面全部高度  100vw 页面全部宽度*/
                     height: 500px;
                 }
             </style>
             <div class="layui-body">
-                <iframe class="frame" src="tuijian.html" name="content" frameborder="0" scrolling="yes" style="background-color: rgb(107, 225, 216);"></iframe>
+                <iframe class="frame" frameborder="0" name="content" scrolling="yes" src="login.html"
+                        style="background-color: rgb(107, 225, 216);"></iframe>
             </div>
             <div class="layui-row " style="background-color: rgb(107, 225, 216);margin-top: 100px;">
                 <div class="layui-col-md12" style="text-align: center;">
-                    <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099 嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
+                    <p style="color: #7f9db9;font-size: 10pt;margin-top: 1%;padding: 1%">© 2099
+                        嶳鬱™版权所有｜宇宙公网安备310104432102009271号｜地ICP备20210232183号-1
                         <br>
                         地网文（2081）3209-124号 | 增值电信业务经营许可证：地C2-20810211
                         <br>
                         互联网违法不良信息举报电话：0Terra-9964996（工作时间：每天10点-20点）｜互联网违法不良信息举报邮箱：Senleetoxi@Earth.solar.MilkyWayGalaxy<br>
-                        亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+                        亲爱的市民朋友，地球警方反诈劝阻电话“Terra-110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+                    </p>
                 </div>
             </div>
 
@@ -470,12 +509,12 @@
     </div>
 
     <!--        商品管理-->
-    <div id="tab4" class="layui-tab-item">
+    <div class="layui-tab-item" id="tab4">
         <p>内容4</p>
         内容4
     </div>
     <!--        用户管理 brief5--><!--syh页面开始-->
-    <div id="tab5" class="layui-tab-item">
+    <div class="layui-tab-item" id="tab5">
         <p>内容5</p>
         内容5
     </div>
