@@ -417,9 +417,175 @@
         </div><!--lxd的代码结束-->
 
         <!--       订单管理  -->
-        <div class="layui-tab-item" id="tab2">
-            <p>内容2</p>
-        </div>
+        <div class="layui-tab-item" id="tab2" style="background-image: url(image/bg.jpg);
+        width:99vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; /* 背景图片覆盖整个元素，保持宽高比 */
+        background-attachment: fixed; /* 背景固定 */
+        padding: 0 0 0 0 ;
+        margin: 0 0 0 0 ;
+        background-color: rgba(  0,  0,  0,1);">
+        <div style="width: 80%; text-align: center;margin: auto;" >
+            <br>
+            <div class="font_color_home"
+            style="width: 70vw;
+                   background-color: rgba(170,255,255,0);
+                   margin: 0 auto;
+                   border-radius: 10px;padding: 10px">
+           <!--                <h1>测试文本</h1>-->
+           <!--搜索按钮-->
+           <div class="layui-input_lxd"
+                style="
+                       display: flex;           /* 使用Flexbox布局 */
+                       align-items: center;     /* 垂直居中对齐 */
+                       border-radius: 20px;
+                       background-color: rgba(255,255,255,0.84);
+                       margin: 10px 0;
+                       padding: 0 18px;">
+               <input autocomplete="off"
+                      class="layui-input "
+                      lay-verify="required"
+                      name="title"
+                      placeholder="请输入查询图书信息"
+                      required
+                      style="background-color: rgba(255,255,255,0);
+                             flex-grow: 1; /* 让输入框占据剩余空间 */
+                             margin: 2px 0px;"
+                      type="text">
+               <i class="layui-icon" style="font-size: 30px; color: #1E9FFF; margin-left: 10px;">&#xe615;</i>
+           </div>
+            <table class="layui-table" lay-even>
+                <colgroup>
+                  <col width="80">
+                  <col width="80">
+                  <col width="80">
+                  <col>
+                </colgroup>
+                <thead> 
+              </div>
+                  <tr>
+                    <th>ISBN</th>
+                    <th>书名</th>
+                    <th>作者</th>
+                  </tr> 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>9787572605727</td>
+                    <td>书籍秘史</td>
+                    <td>（西班牙）伊莲内·巴列霍 著，李静 译</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-213-10162-5</td>
+                    <td>AI未来进行式</td>
+                    <td>李开复、陈楸帆 著</td>
+                  </tr>
+                  <tr>
+                    <td>9787539771137</td>
+                    <td>少年与海</td>
+                    <td>张炜</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-5707-0457-6</td>
+                    <td>砂粒与星尘</td>
+                    <td>薛涛 著</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-50114-1</td>
+                    <td>写作疗愈 用写作赶走焦虑、拖延、坏情绪</td>
+                    <td>刘主编 蓝橙</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-39785-0</td>
+                    <td>信息检索与利用</td>
+                    <td>袁守亮 周春宏</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-49645-4</td>
+                    <td>天安门：历史影像周周看——纪念中华人民共和国成立70周年</td>
+                    <td>梅海涛 郭志义</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-47686-9</td>
+                    <td>非物质文化遗产保护的理论与实践</td>
+                    <td>林青</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-48771-1</td>
+                    <td>机器学习与大数据技术</td>
+                    <td>牟少敏</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-49342-2</td>
+                    <td>Oracle从入门到精通</td>
+                    <td>魔乐科技（MLDN）软件实训中心</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-50235-3</td>
+                    <td>多接入边缘计算（MEC）及关键技术</td>
+                    <td>张建敏 杨峰义 武洲云 张郑锟 王煜炜</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-50644-3</td>
+                    <td>5G无线系统设计与国际标准</td>
+                    <td>刘晓峰 孙韶辉 杜忠达 沈祖康 徐晓东 宋兴华</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-50666-5</td>
+                    <td>深入浅出人工神经网络</td>
+                    <td>江永红</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-40028-4</td>
+                    <td>微型计算机接口技术</td>
+                    <td>刘乐善 陈进才</td>
+                  </tr>
+                  <tr>
+                    <td>978-7-115-50457-9</td>
+                    <td>昆虫记：你不可不知的蜂类王国</td>
+                    <td>企鹅童话</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="page" style="text-align: center;"></div>
+
+<!-- 引入LayUI的CSS和JavaScript文件 -->
+<link rel="stylesheet" href="https://www.layuicdn.com/layui/css/layui.css" media="all">
+<script src="https://www.layuicdn.com/layui/layui.js" charset="utf-8"></script>
+
+<script>
+// 使用layui
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+
+  // 模拟数据总长度
+  var count = 50; // 假设有50条数据
+  
+  // 执行一个laypage实例
+  laypage.render({
+    elem: 'page' // 绑定分页容器
+    ,count: count // 数据总数
+    ,layout: ['prev', 'page', 'next', 'skip'] // 分页布局
+    ,jump: function(obj){ // 翻页事件回调
+      // 模拟渲染数据
+      console.log(obj.curr) // 当前页码
+      console.log(obj.limit) // 每页显示数量
+      // 这里可以发起请求获取当前页的数据
+      // 然后重新渲染表格
+    }
+  });
+});
+</script>
+              <br>
+              
+              </div>
+             
+      
+       </div>
+       </div>
         <!--       zhl 权限分配-->
         <div class="layui-tab-item" id="tab3" style="background-color: rgb(107, 225, 216);width:100%;height: 100vh;">
             <!--  <div class="layui-layout layui-layout-admin">-->
