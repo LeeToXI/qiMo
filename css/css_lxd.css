@@ -96,3 +96,36 @@
     border-radius: 15px;
     text-align: center;
 }
+
+/*友情链接*/
+.link_lxd {
+    width: 100%;
+    height: auto;
+    color: #000000;
+    font-size: 25pt;
+    margin: 0 0 ;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    font-weight: bolder;
+}
+
+.link_lxd_border{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: auto;
+    width: 68vw;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.friend_link{
+    background-color: rgba(255, 255, 255, 0.77);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.friend_link a{
+    text-decoration: none;
+    margin: 0 1%;
+    color: #7f9db9;
+}
