@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <title>管理员</title>
+        <link href="00app/layui/css/layui.css" rel="stylesheet">
+        <script src="00app/layui/layui.js"></script>
+    </head>
+    <body>
+        <div class="layui-fuid" style="background-color: aqua;height:1000px">
+            <div class="layui-col-md5">
+                <ul class="layui-nav layui-nav-tree layui-nav-side">
+                    <li class="layui-nav-item"><a href="" target="content1">内容1</a></li>
+                    <li class="layui-nav-item"><a href="" target="content1">内容1</a></li>
+                    <li class="layui-nav-item"><a href="" target="content1">内容1</a></li>
+                    <li class="layui-nav-item">
+                        用户管理
+                        <dl class="layui-nav-child">
+                            <dd><a href="">1</a></dd>
+                        </dl>
+                    </li><!--syh代码-->
+                </ul>
+            </div>
+            <style>
+                .frame {
+                    width: 1200px;
+                    /* 100vh 页面全部高度  100vw 页面全部宽度*/
+                    height: 1000px;
+                }
+            </style>
+            <div class="layui-col-md7">
+                <iframe frameborder="0" class="frame" name="content1" scrolling="yes" src="user_manager.html"
+                        style="background-color: rgb(107, 225, 216);"></iframe>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            //导航 依赖element模块
+            layui.use('element',function(){
+                var element=layui.element;
+            });
+        </script>
+    </body>
+</html>
