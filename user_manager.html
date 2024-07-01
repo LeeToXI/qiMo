@@ -3,23 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-        <title>管理员</title>
+        <title>用户管理</title>
         <link href="00app/layui/css/layui.css" rel="stylesheet">
         <script src="00app/layui/layui.js"></script>
     </head>
     <body>
         <div class="layui-fuid" style="background-color: aqua;height:1000px">
             <div class="layui-col-sm4 layui-col-md5">
-                <ul class="layui-nav layui-nav-tree layui-nav-side">
-                    <li class="layui-nav-item"><a href="" target="content1">用户基本信息</a></li>
-                    <li class="layui-nav-item"><a href="" target="content1">内容1</a></li>
-                    <li class="layui-nav-item"><a href="" target="content1">内容1</a></li>
-                    <li class="layui-nav-item">
-                        用户管理
-                        <dl class="layui-nav-child">
-                            <dd><a href="">1</a></dd>
-                        </dl>
-                    </li><!--syh代码-->
+                <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="demo">
+                    <li class="layui-nav-item layui-this layui-show"><a href="user_xinxi.html" target="content1">用户基本信息</a></li>
+                    <li class="layui-nav-item"><a href="my.html" target="content1">我的</a></li>
                 </ul>
             </div>
             <style>
