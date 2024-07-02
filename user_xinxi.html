@@ -314,6 +314,17 @@
             
       </div>
 
+      <!--表格工具栏顶部-->
+      <script type="text/html" id ="toolbarDemo">
+        <div class="layui-btn-container">
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"> <i class="layui-icon layui-icon-edit">编辑</i></button>
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"><i class="layui-icon layui-icon-circle">添加</i></button>
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"><i class="layui-icon layui-icon-delete">删除</i></button>
+   
+        </div>
+      </script>
+      <!--表格工具栏底部-->
+
         <script>
         layui.use(['form', 'laydate'], function(){
           var table = layui.table;
@@ -326,8 +337,9 @@
                 even:true,
                 limit:10,
                 limits:[100,200,500,800,1000],
-                title:'学生基础数据'
+                title:'学生基础数据',
                 
+                toolbar:"#toolbarDemo"
               });
               var form = layui.form;
               var laydate = layui.laydate;
