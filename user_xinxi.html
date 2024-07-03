@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <title>用户基本信息</title>
+        <link href="00app/layui/css/layui.css" rel="stylesheet">
+        <script src="00app/layui/layui.js"></script>
+    </head>
+    <body>
+      <!--整个界面部分-->
+      <div class="layui-fluid" style="background-color: rgb(107, 225, 216);height:1000px;margin:30px 250px 0px 420px">
+        <!--首行-->
+        <div class="layui-row" style="background-color: rgb(107, 225, 216);height:40px;overflow: hidden; font-size: x-large;border-bottom: solid snow 1px;">
+            <div class="layui-col-sm4 layui-col-md3" style="text-align: right;">用户基本信息<span style="margin-right: 22px;"></span></div>
+            <div class="layui-col-sm4 layui-col-md5">|</div>
+            <div class="layui-col-sm4 layui-col-md4"><a href="index.html"><span style="margin-right: 20px; margin-left: 140px;">|</span>退出<span style="margin-right: 8px;"></span><i style="font-size: x-large;" class="layui-icon layui-icon-close-fill"></i></a></div>
+        </div>
+
+        <!--信息输入栏-->
+        <div class="layui-row" style="height:10px;margin: 10px;">
+          <div class="layui-col-sm4 layui-col-md4">
+            <form action="" class="layui-form">
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">用户号</label>
+                  <div class="layui-input-inline">
+                    <input type="text" name="email" lay-verify="text"  autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="layui-col-sm4 layui-col-md4">
+            <form action="" class="layui-form">
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">地区</label>
+                  <div class="layui-input-inline">
+                    <input type="text" name="area" lay-verify="text"  autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="layui-col-sm4 layui-col-md4">
+            <form action="" class="layui-form">
+              <div class="layui-form-item">
+                <div class="layui-inline">
+                  <label class="layui-form-label">注册时间</label>
+                  <div class="layui-input-inline layui-input-wrap">
+                    <div class="layui-input-prefix">
+                      <i class="layui-icon layui-icon-date"></i>
+                    </div>
+                    <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      <!--按钮-->
+        <div class="layui-row" style="height:10px;margin: 10px;">
+          <div class="layui-col-sm1 layui-col-md6" style="text-align: right;"><button type="button" style="margin-bottom: 8px;" class="layui-btn layui-btn-sm">搜索</button><span style=" margin-left: 50px;"></span></div>
+          <div class="layui-col-sm1 layui-col-md6"><span style=" margin-left: 50px;"></span><button type="button" class="layui-btn layui-btn-sm">重置</button></div>
+        </div>
+        <!--用户基本信息栏，多页表格  parse-table-demo-->
+        <table lay-filter="parse-table-demo">
+            <thead>
+              <tr>
+                <th lay-data="{field:'nameid', width:150,fixed:true}">用户号</th>
+                <th lay-data="{field:'name', width:150}">用户名</th>
+                <th lay-data="{field:'phone', width:150}">联系电话</th>
+                <th lay-data="{field:'area', minWidth: 180}">地区</th>
+                <th lay-data="{field:'re_time', minWidth: 180}">注册时间</th>
+                <th lay-data="{field:'role', minWidth: 180}">角色</th>
+              </tr> 
+            </thead>
+            <tbody>
+              <tr>
+                <td>00001</td>
+                <td>张三</td>
+                <td>15196686611</td>
+                <td>北京</td>
+                <td>2024-06-01 10:00</td>
+                <td>会员</td>
+              </tr>
+              <tr>
+                <td>00002</td>
+                <td>张四</td>
+                <td>15196686612</td>
+                <td>云南</td>
+                <td>2024-05-01 10:00</td>
+                <td>会员</td>
+              </tr>
+              <tr>
+                <td>00003</td>
+                <td>张五</td>
+                <td>15196686613</td>
+                <td>北京</td>
+                <td>2024-05-20 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00004</td>
+                <td>李明</td>
+                <td>15196686614</td>
+                <td>云南</td>
+                <td>2024-05-30 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00005</td>
+                <td>李红</td>
+                <td>15196686615</td>
+                <td>河北</td>
+                <td>2024-05-30 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00006</td>
+                <td>李丽</td>
+                <td>15196686616</td>
+                <td>北京</td>
+                <td>2024-05-20 07:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00007</td>
+                <td>王二</td>
+                <td>15196686618</td>
+                <td>湖北</td>
+                <td>2024-05-22 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00008</td>
+                <td>王三</td>
+                <td>15196686619</td>
+                <td>北京</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00010</td>
+                <td>王四</td>
+                <td>15296686611</td>
+                <td>北京</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00011</td>
+                <td>王五</td>
+                <td>15496686612</td>
+                <td>山东</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00012</td>
+                <td>王六</td>
+                <td>15196686611</td>
+                <td>北京</td>
+                <td>2024-06-03 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00013</td>
+                <td>刘明</td>
+                <td>15196686621</td>
+                <td>云南</td>
+                <td>2024-05-22 09:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00014</td>
+                <td>刘丽</td>
+                <td>15196686622</td>
+                <td>河北</td>
+                <td>2024-06-01 08:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00015</td>
+                <td>刘红</td>
+                <td>15196686623</td>
+                <td>云南</td>
+                <td>2024-05-25 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00016</td>
+                <td>刘东</td>
+                <td>15196686624</td>
+                <td>云南</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00017</td>
+                <td>张明</td>
+                <td>15196686625</td>
+                <td>云南</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00018</td>
+                <td>赵三</td>
+                <td>15196686626</td>
+                <td>云南</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00019</td>
+                <td>赵四</td>
+                <td>15196686627</td>
+                <td>云南</td>
+                <td>2024-05-24 10:00</td>
+                <td>云南</td>
+              </tr>
+              <tr>
+                <td>00020</td>
+                <td>赵五</td>
+                <td>15196686628</td>
+                <td>云南</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00021</td>
+                <td>赵六</td>
+                <td>15196686629</td>
+                <td>云南</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00022</td>
+                <td>赵丽</td>
+                <td>15196686630</td>
+                <td>湖南</td>
+                <td>2024-06-02 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00023</td>
+                <td>赵敏</td>
+                <td>15196686631</td>
+                <td>北京</td>
+                <td>2024-06-01 10:00</td>
+                <td>管理员</td>
+              </tr>
+              <tr>
+                <td>00024</td>
+                <td>赵敏</td>
+                <td>15196686631</td>
+                <td>北京</td>
+                <td>2024-06-01 10:00</td>
+                <td>管理员</td>
+              </tr>
+              <tr>
+                <td>00025</td>
+                <td>石昊</td>
+                <td>15196682221</td>
+                <td>云南</td>
+                <td>2024-05-20 10:00</td>
+                <td>会员</td>
+              </tr>
+              <tr>
+                <td>00026</td>
+                <td>火灵儿</td>
+                <td>15196681022</td>
+                <td>云南</td>
+                <td>2024-05-20 10:00</td>
+                <td>会员</td>
+              </tr>
+              <tr>
+                <td>00027</td>
+                <td>石毅</td>
+                <td>15196686632</td>
+                <td>云南</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00028</td>
+                <td>石子陵</td>
+                <td>15196686633</td>
+                <td>云南</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00029</td>
+                <td>张小凡</td>
+                <td>15196686634</td>
+                <td>云南</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+              <tr>
+                <td>00030</td>
+                <td>陆雪琪</td>
+                <td>15196686635</td>
+                <td>云南</td>
+                <td>2024-06-01 10:00</td>
+                <td>用户</td>
+              </tr>
+            </tbody>
+          </table>
+            
+      </div>
+
+      <!--表格工具栏顶部-->
+      <script type="text/html" id ="toolbarDemo">
+        <div class="layui-btn-container">
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"> <i class="layui-icon layui-icon-edit">编辑</i></button>
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"><i class="layui-icon layui-icon-circle">添加</i></button>
+          <button class="layui-btn layui-btn-xs" lay-event="getCheckData"><i class="layui-icon layui-icon-delete">删除</i></button>
+   
+        </div>
+      </script>
+      <!--表格工具栏底部-->
+
+        <script>
+        layui.use(['form', 'laydate'], function(){
+          var table = layui.table;
+              table.init('parse-table-demo', {
+                // height: ''
+                page:true,
+                toolbar:true,
+                skin:'line',
+                size:'lg',
+                even:true,
+                limit:10,
+                limits:[100,200,500,800,1000],
+                title:'学生基础数据',
+                
+                toolbar:"#toolbarDemo"
+              });
+              var form = layui.form;
+              var laydate = layui.laydate;
+
+              // 初始化日期选择器
+              laydate.render({
+                elem: '#date', // 指定元素
+                trigger: 'click', // 点击即弹出日期选择器
+                type: 'date' // 选择日期类型
+              });
+
+              // 监听表单验证
+              form.verify({
+                date: function(value){
+                  if(value.length === 0){ // 可以根据需要设置不同的验证规则
+                    return '请选择日期';
+                  }
+                }
+              });
+        });
+        </script>
+      
+
+      <script type="text/javascript">
+          //导入依赖模块
+          layui.use(['element','form'],function(){
+              var element=layui.element;
+              var form = layui.form;
+          });
+      </script>
+    </body>
+</html>

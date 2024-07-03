@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <title>图书管理系统</title>
+        <link href="00app/layui/css/layui.css" rel="stylesheet">
+        <script src="00app/layui/layui.js"></script>
+        <link href="css/css_lxd.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="layui-fuid" style="background-color: rgb(110, 242, 242);height:1000px">
+            <div class="layui-row">
+                <div class="layui-col-sm4 layui-col-md4">.</div>
+                <!--居中左-->
+                <!--居中部分顶部-->
+                <div class="layui-col-sm4 layui-col-md4" style="background-color: rgb(138, 247, 247); height: 600px; margin-top: 10px;overflow: hidden;">
+                    <div style="font-size: 30px;font-family: 宋体;text-align: center;margin: 15px 0px 20px 0px;"><p>管理员信息</p></div>
+                    <!--图片-->
+                    <div class="layui-col-sm12 layui-col-md12">
+                        <div style="margin-left: 32%; overflow: hidden;">
+                            <div  style="height: 150px;">
+                                <div class="layui-upload-list">
+                                    <img class="layui-upload-img" id="ID-upload-demo-img" src="image/my/a.JPEG" style="height: 160px;">
+                                    <div id="ID-upload-demo-text"></div>
+                                </div>
+                            </div>
+                            <!--图片底部-->
+                            <button type="button" class="layui-btn" id="ID-upload-demo-btn" style="margin: 40px 0px 0px 24px;">
+                                <i class="layui-icon layui-icon-upload"></i> 上传头像
+                            </button>
+                        </div>
+                    </div>
+                    <!--图片以及上传底部-->
+                    <!--表单所在容器-->
+                    <div class="layui-col-sm12 layui-col-md12" style="overflow: hidden;">
+                        <!--表单顶部-->
+                        <form class="layui-form" action="" style="margin-top: 35px;margin-left: 1px;">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">用户id</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="userid" value="11111" style="background-color: rgb(138, 247, 247);" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">用户名</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="username" value="root" style="background-color: rgb(138, 247, 247);" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">地区</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="area" value="云南" style="background-color: rgb(138, 247, 247);" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">联系电话</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="phone" value="18876645721" style="background-color: rgb(138, 247, 247);" class="layui-input">
+                                </div>
+                            </div>
+                        </form>
+                        <button class="layui-btn layui-btn-primary layui-border-white" style="background-color: rgb(110, 242, 242);margin-left: 40%;"><a href="login">退出登录</a></button>
+                    </div>
+                </div>
+                <!--居中右-->
+                <div class="layui-col-sm4 layui-col-md4"><p></p></div>
+            </div>
+        </div>
+    </body>
+</html>

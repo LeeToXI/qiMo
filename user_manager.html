@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <title>用户管理</title>
+        <link href="00app/layui/css/layui.css" rel="stylesheet">
+        <script src="00app/layui/layui.js"></script>
+    </head>
+    <body>
+        <div class="layui-fuid" style="background-color: aqua;height:1000px">
+            <div class="layui-col-sm4 layui-col-md5">
+                <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="demo">
+                    <li class="layui-nav-item layui-this"><a href="user_xinxi.html" target="content1">用户基本信息</a></li>
+                    <li class="layui-nav-item"><a href="my.html" target="content1">我的</a></li>
+                </ul>
+            </div>
+            <style>
+                .frame {
+                    width: 1500px;
+                    /* 100vh 页面全部高度  100vw 页面全部宽度*/
+                    height: 1000px;
+                }
+            </style>
+            <div class="layui-col-sm8 layui-col-md7">
+                <iframe frameborder="0" class="frame" name="content1" scrolling="yes" src="user_xinxi.html"
+                        style="background-color: rgb(107, 225, 216);"></iframe>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            //导航 依赖element模块
+            layui.use('element',function(){
+                var element=layui.element;
+            });
+        </script>
+    </body>
+</html>
